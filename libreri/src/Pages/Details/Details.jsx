@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import styles from "./details.module.css";
-
 const Details = () => {
   const { id } = useParams();
   const [book, setBook] = useState(null);
@@ -33,4 +32,5 @@ const Details = () => {
     </div>
   );
 };
+
 export default Details;
