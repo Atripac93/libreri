@@ -2,8 +2,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./Pages/HomePage";
 import ErrorPage from "./Pages/ErrorPage";
 import Details from "./Pages/Details/Details";
+import Format from "./Form/Format";
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
       <Routes>
@@ -15,6 +16,6 @@ function App() {
       </Routes>
     </BrowserRouter>
   );
-}
+};
 
 export default App;
