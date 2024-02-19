@@ -2,7 +2,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./Pages/HomePage";
 import ErrorPage from "./Pages/ErrorPage";
 import Details from "./Pages/Details/Details";
-import Format from "./Form/Format";
 
 const App = () => {
   return (
