@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import styles from "./details.module.css";
+import AddComment from "../../Form/AddComment";
 const Details = () => {
   const { id } = useParams();
   const [book, setBook] = useState(null);
@@ -24,12 +24,15 @@ const Details = () => {
   }, [id]);
 
   return (
-    <div className="container mt-3">
-      <p>{book && book.asin}</p>
-      <p className="fw-bold">{book && book.title}</p>
-      <p>Price{book && book.price}</p>
-      <img className={styles.myDetails} src={book && book.img} alt="" />
-    </div>
+    <>
+      <AddComment book={book} />
+    </>
+    // <div className="container mt-3">
+    //   <p>{book && book.asin}</p>
+    //   <p className="fw-bold">{book && book.title}</p>
+    //   <p>Price{book && book.price}</p>
+    //   <img className={styles.myDetails} src={book && book.img} alt="" />
+    // </div>
   );
 };
 
